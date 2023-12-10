@@ -4,4 +4,7 @@
   {{ form.csrf_token }} {{ form.title.label }} {{ form.title }} {{ form.submit
   }}
 </form>
-{% endblock %}
+
+{% if title %}
+<h1>{{ title }}</h1>
+{% endif %} {% endblock %}
